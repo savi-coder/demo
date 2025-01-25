@@ -1,0 +1,49 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+@keyframes changeaOuter{
+    0%{
+        background-color:rgb(196, 105, 105) ;
+        scale: 1.5;
+    
+    }
+    50%{
+        background-color:rgb(198, 130, 130) ; 
+        scale: 1.5;
+    }
+    100%{
+        background-color:rgb(198, 163, 163) ; 
+        scale: 3;
+
+    }
+}
+.outer{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(196, 105, 105);
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 20px;
+    position: relative;
+    animation-name:changeaOuter ;
+    animation-duration: 8s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-duration: 8s;
+}
+.inner{
+    width: 130px;
+    height: 40px;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(214, 160, 160);
+    font-size: 14px;
+    border-radius: 20px;
+    position: absolute;
+    top: 6px;
+    left: 8px;
+}
